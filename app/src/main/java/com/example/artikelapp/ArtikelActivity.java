@@ -14,21 +14,20 @@ public class ArtikelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.artikel_main);
     }
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
+
 
     public void openHome(View view) {
         Intent a = new Intent(ArtikelActivity.this, WelcomeActivity.class);
         startActivity(a);
         overridePendingTransition(0, 0);
+        finish();
     }
 
     public void openBiodata(View view) {
         Intent a = new Intent(ArtikelActivity.this, BiodataActivity.class);
         startActivity(a);
         overridePendingTransition(0, 0);
+        finish();
     }
 
 

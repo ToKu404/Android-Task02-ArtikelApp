@@ -14,10 +14,7 @@ public class BiodataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.biodata_main);
     }
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
+
     public void wame(View view) {
         Uri uri = Uri.parse("https://wa.me/qr/IV6GKB5QSVS3D1"); // missing 'http://' will cause crashed
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
@@ -28,11 +25,13 @@ public class BiodataActivity extends AppCompatActivity {
         Intent a = new Intent(BiodataActivity.this, ArtikelActivity.class);
         startActivity(a);
         overridePendingTransition(0, 0);
+        finish();
     }
 
     public void openHome(View view) {
         Intent a = new Intent(BiodataActivity.this, WelcomeActivity.class);
         startActivity(a);
         overridePendingTransition(0, 0);
+        finish();
     }
 }

@@ -10,25 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Artikelapp"
         >
-        <activity android:name=".WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".WelcomeActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity android:name=".ArtikelActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomeActivity" />
+            android:exported="false" android:screenOrientation="portrait">
         </activity>
         <activity android:name=".BiodataActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomeActivity" />
+            android:exported="false" android:screenOrientation="portrait">
         </activity>
-
     </application>
 
 </manifest>

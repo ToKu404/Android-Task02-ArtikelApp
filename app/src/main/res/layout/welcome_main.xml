@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/vectorHome"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:src="@drawable/ic_welcomeimage" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Welcome To"
+                android:textColor="@color/mDarkBlue"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/pacifico_regular"
+                android:text="San"
+                android:textColor="@color/mDarkBlue"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pacifico_regular"
+                android:text="Info."
+                android:textColor="@color/mBlueMain"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="244dp"
+            android:layout_height="53dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Menyajikan artikel menarik, akurat dan terpercaya."
+            android:textColor="@color/mDarkBlue"
+            android:textSize="14dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:onClick="openBiodata"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Biodata"
+                android:textAllCaps="false"
+                android:textColor="@color/mDarkBlue"
+                android:textSize="14dp"
+                android:background="@drawable/myshape2"
+                android:elevation="1dp"
+                android:shadowColor="@color/mBlueMain"
+                app:backgroundTint="@null"
+
+              />
+
+            <Button
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:onClick="openArtikel"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/myshape1"
+                android:fontFamily="@font/poppins_regular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:elevation="1dp"
+                android:shadowColor="@color/mBlueMain"
+                app:backgroundTint="@null"
+                android:text="Artikel"
+
+                android:textSize="14dp"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@drawable/ic_wavewelcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
